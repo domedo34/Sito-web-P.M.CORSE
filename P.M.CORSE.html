@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.M. Corse - Racing Team</title>
+    <link href="P.M.Corse.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 class="animated-text">P.M. CORSE</h1>
+        <p class="scroll-text">WELCOME TO OUR TEAM!</p>
+        <img src="logo.png" alt="Team Logo" width="400" height="250">
+	
+    </header>
+<div>
+    <h2 class="scrolling-text">
+        We are a group of students and professors, united by the passion for innovation, technology, and teamwork.
+		Together, we have formed a team with the ambitious goal
+        of winning the international competition "F1 in Schools".
+		<br>
+		<br>
+		This project offers us the opportunity to combine  theory and practice, blending our technical
+        and creative skills to design and build single-seater mini-cars for amazing performances in
+        official competitions.
+		<br>
+		<br>
+		Our team is not just a group; it's a real family. Every member contributes ideas and skills
+        to a common vision, proving that collaboration, commitment, and determination can lead us 
+        to achieve extraordinary results. We represent the best of our school in this unique challenge.
+		<br>
+		<br>
+		Our team was born in 2023 with the passion and goal of excelling in this extraordinary 
+        competition. From the start, we faced every challenge with determination! We qualified in March 2024 and raced the semi-finals in April 2024.
+        Our team was made up of five members, each playing a key role to ensure the success of the project: the mechanical designer 
+        was responsible for the technical implementation of our model; the Fluid Dynamics Analyst optimized aerodynamics
+        to maximize performance; the marketing manager and business manager worked together to promote the team and manage resources;
+        finally, the project manager coordinated the group, making sure that every aspect was aligned with the objectives.
+
+        PM Corse is the demonstration that passion, commitment and collaboration are the engine of success!
+		
+    </h2>
+	</div>
+
+  
+        <div>
+        <h1 style="color: #ff416c; margin-top: 40px;">OUR GOALS</h1>
+		<p style="text-align:justify;">
+	    This year for the second consecutive year we will participate in the project
+        proposed by the school and organized by Innovation farm called"F1 IN SCHOOLS",
+	    and our goals will be more ambitious than ever.
+		</p>
+	
+    <ul>
+        <li>Reaching and winning the national finals, the most prestigious national goal for this competition.</li>
+        <li>Promoting dialogue and collaboration with local business entities, enhancing the contribution of the territory to our project.</li>
+        <li>Adopting innovative and ecological solutions: we are committed to combining creativity and sustainability in every design choice.</li>
+    </ul>
+	</div>
+  <script>
+    // Funzione per rilevare se un elemento è visibile nel viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top < window.innerHeight && // Parte superiore visibile
+        rect.bottom > 0 // Parte inferiore visibile
+      );
+    }
+
+    // Aggiungi l'evento scroll
+    window.addEventListener("scroll", function () {
+      const textElement = document.querySelector(".scrolling-text");
+
+      if (isInViewport(textElement)) {
+        textElement.classList.remove("active"); // Rimuovi la classe per ripristinare
+        void textElement.offsetWidth; // Forza il reflow del browser
+        textElement.classList.add("active"); // Riapplica la classe per riattivare l'animazione
+      }
+    });
+  </script>
+
+
+
+<div id="contenitore">
+<a href="about us.html">About us</a>
+<a href="P.M.Corse Lab.html">P.M.Corse Lab</a>
+</div>
+
+    <footer>
+        <p style="text-align:center">&copy; 2024 P.M. Corse - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

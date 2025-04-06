@@ -1,0 +1,129 @@
+	body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Sfondo bianco */
+    color: #333; /* Colore del testo */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c); /* Gradiente per l'header */
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+	.image-container {
+    position: relative;
+    display: flex;
+    gap: 10px; /* Spaziatura tra le immagini */
+    justify-content: center;
+}
+.image-container, .image-container-lower {
+    display: flex;
+    gap: 10px; /* Spaziatura tra le immagini */
+    justify-content: center; /* Centra le immagini orizzontalmente */
+	position:relative;
+}
+
+.image-container-lower {
+    margin-top: 30px; /* Spazio tra i due contenitori */
+}
+
+h1 {
+	color:white;
+	
+}
+h2 {
+	color:red;
+	
+}
+
+.focus-image {
+    width: 200px; /* Dimensione iniziale dell'immagine */
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effetto fluido */
+    cursor: pointer;
+    outline: none; /* Rimuove il contorno di default */
+}
+
+.focus-image:hover {
+    transform: scale(1.2); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra */
+}
+
+.focus-image:focus {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra orizzontalmente */
+    transform: translate(-50%, -50%) scale(2.5); /* Ingrandisce e centra l'immagine */
+    z-index: 10; /* Porta l'immagine in primo piano */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Ombra più pronunciata */
+}
+
+
+    #contenitore {
+    display: flex;
+    flex-direction: row; /* Disposizione verticale */
+    align-items: center; /* Centrare orizzontalmente */
+    justify-content: center; /* Centrare verticalmente */
+	margin-top: 50px;
+	margin-bottom:-300px;
+	
+	gap:10px;
+}
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #ff4b2b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+			width:150px;
+        }
+
+        a:hover {
+            background: #ff2a1a;
+        }
+		
+		        footer {
+            margin-top: 50px;
+            background-color: #111;
+            color: #bbb;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+				p {
+		text-align:center;
+		font-size: 1.3em;
+		}
+		
+	.sponsor {
+    background-color: white; /* Sfondo bianco */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Spaziatura tra le immagini sponsor */
+    flex-wrap: wrap; /* Responsive layout */
+	margin-top:100px;
+	margin-bottom:50px;
+}
+
+.sponsor img {
+    width: 120px; /* Dimensione immagini sponsor */
+    height: auto;
+    margin: 10px;
+}
+		
+footer {
+    background-color: #111; /* Sfondo scuro per il footer */
+    color: #bbb;
+    padding: 20px 0;
+    font-size: 0.9em;
+    margin-top: 350px;
+}
